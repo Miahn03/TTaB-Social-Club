@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TTaB Social Club - PPCP</title>
+
+<link rel="icon" href="https://ppcp.org.uk/wp-content/uploads/2025/10/ppcp-favicon-150x150.png">
+
+<style>
+body {
+  background: #9CE0D3;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Slideshow */
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  height: 100%;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay bar */
+.hero-overlay-bar {
+  text-align: center;
+  position: absolute;
+  bottom: 0; 
+  padding: 20px; 
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.hero-overlay-bar h3 {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+/* HEADER */
+.header {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  z-index: 20;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  background: #eaf6fb;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0b3046;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.nav a.active {
+  background: #cfefff;
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.cta {
+  background: #17a8e0;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+/* MOBILE */
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  background: none;
+  border: none;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: #eaf6fb;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.mobile-nav.open {
+  display: flex;
+}
+
+.mobile-cta {
+  background: #17a8e0;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+/* Main Content */
+.content {
+  background: #9CE0D3;
+
+}
+.ribbon {
+  max-width: 900px;
+  background: #CEF0E9;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+.ribbon-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card.small {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+.footer {
+  background: linear-gradient(135deg, #0b3046, #154e6a);
+  color: white;
+  padding: 50px 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 120px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav { display: none;  }
+  .cta { display: none; }
+  .menu-toggle { display: block; }
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .card.small {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+<header class="header">
+  <div class="header-inner">
+
+    <div class="left-group">
+      <div class="logo">
+        <img src="https://ppcp.org.uk/wp-content/uploads/2024/06/Logo-PPCP-300x197.png">
+      </div>
+
+      <nav class="nav">
+        <a href="#"><b>Home</b></a>
+        <a href="#"><b>About</b></a>
+        <a href="#"><b>Services</b></a>
+        <a href="#" class="active"><b>TTaB - Social Club</b></a>
+      </nav>
+    </div>
+
+    <div class="actions">
+      <span class="phone">020 3928 9370</span>
+      <a class="cta">Get in Touch</a>
+      <button class="menu-toggle">☰</button>
+    </div>
+
+  </div>
+
+  <div class="mobile-nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">TTaB</a>
+    <a class="mobile-cta">Get in Touch</a>
+  </div>
+</header>
+
+<div class="slideshow-container">
+  <div class="mySlides"><img src="1.png"></div>
+  <div class="mySlides"><img src="2.png"></div>
+  <div class="mySlides"><img src="3.png"></div>
+  <div class="hero-overlay-bar">
+    <img src="https://ppcp.org.uk/wp-content/uploads/2025/10/Logo-updated.png" alt="TTaB Social Club" style="width: 80%;">
+  </div>
+</div>
+
+</section>
+
+<!-- Content -->
+<section class="content">
+  <div class="ribbon">
+  <div class="ribbon-inner">
+    <div class="card">
+      <h3>Every Thursday (Term time only)</h3>
+      <p>TTaB - Social Club is every Thursday 11AM to 3PM at <a href="https://www.google.co.uk/maps/place/Light+Project+Pro+International/@51.5485716,-0.1187645,17z/data=!3m1!4b1!4m6!3m5!1s0x48761be73d98bda3:0x978d155405b3db77!8m2!3d51.5485716!4d-0.1161896!16s%2Fg%2F11rrjsj_vh?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D">The Exchange, Watkinson road, N7 8DE</a>.</p>
+      <h3>Itenerary</h3>
+      <ul>
+          <li>11AM - 1PM: IT Support</li>
+	  <li>1PM - 2PM: Chair exercise</li>
+	  <li>2PM - 3PM: Lunch</li>
+      </ul> 
+    </div>
+
+    <div class="card">
+        <h3>Learn how to use a computer, apps, the web and more!</h3>
+        <p>We provide a short presentation on key skills, with additional support available from our friendly staff of Trainee Junior IT Support Technicians.</p>
+        <img src="Presentation.jpeg" alt="TTaB social club presentation" style="width: 50%;">  
+    </div>
+
+    <div class="card">
+	<h3>Fun Chair Exercises for Strength, Balance, and Fitness</h3>
+	<p>Join us for fun, engaging chair exercises designed to help you feel fit and strong. <br>Simple moves, big benefits and no standing required! <br>Perfect for all levels, come move, stretch, and feel great.</p>
+    </div>
+
+    <div class="card">
+	<h3>Lunch, served fresh by Better Together Kitchen</h3>
+	<p>End the day off with a scrumptious lunch cooked fresh every Thursday by our top class chef, Meshach. </p>
+	<div class="prices">
+	    <b><p>General Pricing:</p></b>
+	    <ul>
+	        <li>Main: £3.50</li>
+	        <li>Dessert: £2</li>
+	    </ul>
+	    <b><p>Older Residents:</p></b>
+	    <ul>
+	        <li>Main: Free</li>
+	        <li>Dessert: £1</li>
+	    </ul>
+        </div>
+    </div>
+    <div class="card small">
+      <h2>A big thank you to the Cripplegate Foundation for their continued support with the TTaB Project.</h2>
+      <div><img src="https://ppcp.org.uk/wp-content/uploads/2025/11/logo-cripple-foundation-300x129-1.png" alt="Cripplegate Foundation" style="width: 90%;"></div>
+    </div>
+
+  </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-col">
+      <img src="https://ppcp.org.uk/wp-content/uploads/2024/06/LogoPPCP-White-300x194.png" class="footer-logo">
+    </div>
+
+    <div class="footer-col">
+      <h2>Find Us</h2>
+      <p>Elizabeth House Community Centre<br>London</p>
+    </div>
+
+    <div class="footer-col">
+      <h2>Contact</h2>
+      <p>020 3928 9370</p>
+    </div>
+    <div class="footer-col">
+        <div class="footer-bottom" >
+        <h2>© 2026 Peoples Place Community Partnerships</h2>
+        <h4>Registered Community Interest Company - 12478666</h4>
+        <h4>(Limited by Guarantee) © 2026 PPCP</h4>
+        </div>
+    </div>
+
+  </div>
+
+
+</footer>
+
+<script>
+const toggle = document.querySelector('.menu-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+toggle.onclick = () => mobileNav.classList.toggle('open');
+
+let slideIndex = 0;
+const slides = document.getElementsByClassName("mySlides");
+
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
+  slides[slideIndex - 1].style.display = "block";
+}
+
+setInterval(showSlides, 5000);
+showSlides();
+</script>
+
+</body>
+</html>
