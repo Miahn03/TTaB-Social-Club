@@ -182,14 +182,15 @@ body {
   border-radius: 12px;
 }
 
-.prices {
-  text-align: center;
-  
+.prices ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 20px;
 }
 
-.prices ul{
-  padding: 0px 360px;
-  
+.prices {
+  text-align: center;
 }
 
 .card img {
@@ -237,9 +238,6 @@ body {
   .nav { display: none;  }
   .cta { display: none; }
   .menu-toggle { display: block; }
-  .prices ul{ 
-    padding: 0px 280px; 
-  }
 }
 
 @media (max-width: 768px) {
@@ -251,12 +249,18 @@ body {
     text-align: center;
     flex-direction: column;
   }
-  .hero-overlay-bar img {
-    width: 100%;
-  }
-  
-  .prices ul{ 
-    padding: 0px 150px; 
+  .hero-overlay-bar {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 150%;
+    overflow: hidden;
+
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
   }
   
 }
